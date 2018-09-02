@@ -23,3 +23,9 @@ The support for UASM with RadASM makes assumptions that your UASM installation u
 \UASM\lib
 \UASM\lib\x64
 ```
+
+# Resources
+
+* [RadASM IDE](http://www.softpedia.com/get/Programming/File-Editors/RadASM.shtml)
+* [Masm32](http://www.masm32.com/download.htm)
+* [UASM](http://www.terraspace.co.uk/uasm.html)
