@@ -23,9 +23,34 @@ The support for UASM with RadASM makes assumptions that your UASM installation u
 \UASM\lib
 \UASM\lib\x64
 ```
+**Includes & Libraries** 
+
+Includes for both x86 and x64 can be obtained from using the WinInc package.
+
+Libraries for **x86** can be copied from the MASM32 SDK `\MASM32\lib` folder to the `UASM\lib` folder.
+
+Libraries for **x64** can be obtained via (assuming default installed locations):
+* Installed Windows SDK: `\Program Files (x86)\Microsoft SDKs\Windows\v7.1A\Lib\x64`
+* Installed Windows Kit: `\Program Files (x86)\Windows Kits\8.1\Lib\winv6.3\um\x64`
+* PellesC - `\PellesC\Lib\Win64`
+
+These **x64** libraries should be copied to the `UASM\lib\x64` folder.
+
+
+
+**Other Binaries**
+
+There are other binary tools required that will have to be sourced from a Visual Studio installation and placed in the `UASM\bin` folder:
+* Resource Compiler: `rc.exe`, `rcdll.dll`
+* Resource Converter: `cvtres.exe`, `cvtres.exe.config`
+* Linker & Lib Manager: `lib.exe`, `link.exe`, `link.exe.config`, `msobj120.dll`, `mspdb120.dll`, `mspdbcore.dll` and the c runtime `msvcr120.dll`
 
 # Resources
 
 * [RadASM IDE](http://www.softpedia.com/get/Programming/File-Editors/RadASM.shtml)
 * [Masm32](http://www.masm32.com/download.htm)
 * [UASM](http://www.terraspace.co.uk/uasm.html)
+* [WinInc](http://www.terraspace.co.uk/WinInc209.zip)
+* [Windows SDK archive](https://developer.microsoft.com/en-us/windows/downloads/sdk-archive)
+* [Visual Studio](https://visualstudio.microsoft.com/)
+* [PellesC 8.00](http://www.pellesc.de/download_start.php?file=800/setup64.exe)
